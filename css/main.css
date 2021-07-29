@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+.side-by-side {
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 70px;
+    vertical-align: top;
+    horizontal-align: center;
+} 
+
+.side-by-side p {
+    line-height: 200% !important;
+}
+
+#top  {
+	text-align: right;
+	font-size: small;
+	padding-top: 5px;
+	padding-right: 18px;
+}
+
+#headerimg div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	display: block;
+	max-width: 100%;
+	text-decoration: none;
+	font-family: comfortaa;
+	text-align: center;
+	font-style: normal;
+}
+
+#headerimg div.h {
+	font-weight: 400;
+	font-size: 250%;
+	font-variant: normal;
+	color: #333333;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#headerimg a {
+  text-decoration: none;
+}
+
+#headerimg div.subh {
+	font-weight: 200;
+	font-size: 100%;
+	font-variant: normal;
+	color: #6B6B6B;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+.navigationbar ul li  {
+	font-family: comfortaa;
+	font-style: normal;
+	font-weight: 400;
+	color: #BCBCBC;
+	font-variant: normal;
+	font-size: large;
+	display: inline-block;
+  	width: 23%;
+	position: static;
+	padding-top: 3px;
+}
+
+.navigationbar a {
+	color: #A3A2A2;
+  text-decoration: none;
+}
+
+.navigationbar ul  {
+	list-style: none;
+	text-align: center;
+  	overflow: auto;
+  	padding: 0px;
+}
+
+.navigationbar a:hover, .navigationbar a.normal:active, .navigationbar a.normal:focus   {
+	color: #008080;
+	text-decoration: none;
+}
+
+#wrapper .navigationbar #currentPage {
+	 color: #008080;
+}
+
+.navigationbar_x5 ul li {
+  	width: 18%;
+}
+
+.navigationbar_x6 ul li {
+	width: 14%;
+}
+
+h1 {
+	font-family: comfortaa;
+	font-style: normal;
+	font-weight: 400;
+	font-size: large;
+	font-variant: normal;
+	color: #008080;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+h2 {
+	font-family: comfortaa;
+	font-style: normal;
+	font-weight: 400;
+	color: #6B6B6B;
+	font-size: small;
+  	margin-bottom: 10px;
+}
+
+h3 {
+	color: #6B6B6B;
+	text-decoration: underline;
+	font-size: small;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: comfortaa;
+	font-style: normal;
+	font-weight: 700;
+	font-size: small;
+	color: #2A47C3;
+}
+
+#wrapper #mainbody {
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 210%;
+	width:100%;
+	height:100%;
+	margin-top:50px;
+	margin-bottom:70px;
+	display :block;
+}
+
+
+#wrapper #mainbody p {
+	margin: 0px !important;
+	padding-top: 13px;
+	line-height: 290%;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+    	margin: 0px !important;
+    	padding: 0px;
+}
+
+
+#wrapper #footerwrapper img {
+	float: left;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding-right: 20px;
+	width: 47px;
+	height: 57px;
+}
+
+#wrapper #footerwrapper {
+	width: 100%;
+	height: 40px;
+	background: #008080;
+	position: fixed;
+	bottom: 0px;
+}
+
+#footerwrapper #email {
+	font-family: comfortaa;
+	font-style: normal;
+	font-weight: 400;
+	color: #FFFFFF;
+	font-variant: normal;
+	font-size: 100%;
+	right: 80px;
+	top:25%;
+	float: left;
+	position: absolute;
+	text-decoration: none;
+}
+
+ul.img-list {
+	list-style-type: none;
+	padding: 0px !important;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 0px !important;
+}
+ 
+ul.project-list {
+	list-style-type: none;
+	padding: 0px !important;
+	margin-bottom: 80px;
+	text-align: center;
+	left: 50%;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 300px;
+	margin: 1em;
+	position: relative;
+	width: 300px;
+}
+
+
+ul.project-list li {
+	display: inline-block;
+	height: 365px;
+	margin: 1em;
+	position: relative;
+	width: 500px;
+}
+
+ul.img-list span.text-content {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: medium;
+	background: rgba(0,0,0,0.35);
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 300px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 300px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+ 
+ul.project-list span.text-content {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: medium;
+	background: rgba(0,0,0,0.65);
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 365px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 500px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+ul.img-list span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+ul.project-list span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+ul.project-list li:hover span.text-content {
+  opacity: 1;
+}
+
+hr {
+	border: 0;
+	width: 100%;
+	color: #C7C8CA;
+	background-color: #C7C8CA;
+	height: 1px;
+}
+
+#wrapper #mainbody #copyright  {
+	display: none;
+}
+
+#wrapper #sharebar {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-top: -10px;
+}
+
+.abstract {
+  width: 85%;
+  line-height: 180%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.abstractimg {
+  width: 85%;
+  margin: 20px auto 40px auto;
+}
+
+.abstractfig { 
+  margin: 20px auto 40px auto;
+  font-size: 80%;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+#recentnews {
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  font-weight: 500;
+}
+
