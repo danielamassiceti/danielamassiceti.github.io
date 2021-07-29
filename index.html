@@ -46,15 +46,15 @@
   </li>
   
   <li>
-    <a href="{{ url_for('about') }}">
-      <img src="{{ url_for('static', filename='homepageimages/about.png')}}" width="300" height="300" alt=""/>
+    <a href="about.html">
+      <img src="images/homepageimages/about.png" width="300" height="300" alt=""/>
       <span class="text-content"><span>about</span></span>
     </a>
   </li>
    
   <li>
-    <a href="{{ url_for('research') }}">
-      <img src="{{ url_for('static', filename='homepageimages/research.png') }}" width="300" height="300" alt=""/>
+    <a href="research.html">
+      <img src="images/homepageimages/research.png" width="300" height="300" alt=""/>
       <span class="text-content"><span>research</span></span>
     </a>
   </li>
@@ -62,12 +62,16 @@
 
   <div id="recentnews">
   <h1>Recent news</h1>
-  <ul id="newslist">
+  <ul id="newslist"> 
+	  <li><b>July, 2021:</b> Our paper on the ORBIT dataset and Teachable Object Recognition Benchmark was accepted to ICCV 2021! </li>
+	  <li><b>July, 2021:</b> Our paper on our learnings from collecting the ORBIT dataset with people who are blind/low-vision was accepted to ASSETS 2021 </li>
+	  <li><b>Mar, 2021:</b> Was upgraded to a Senior Researcher at Microsoft Research Cambridge (and also moved to Cambridge!)</li>
+	  <li><b>Feb, 2021:</b> Gave a guest lecture at University of Cambridge</li>
 	  <li><b>May, 2020:</b> Launched the <a href="https://orbit.city.ac.uk" target="_blank">ORBIT Project</a>, a data collection effort by blind users, with an amazing team of collaborators</li>
-	  <li><b>Apr, 2020:</b> Appointed as St. Edmund's College Cambridge Postdoctoral Research Fellow</li>
-	  <li><b>Feb, 2020:</b> Started as a <a href="https://www.microsoft.com/en-us/research/people/t-dmassi/" target="_blank">Researcher</a> at Microsoft Research Cambridge</li>
+	  <li><b>Apr, 2020:</b> Appointed as a St. Edmund's College Cambridge Postdoctoral Research Fellow</li>
+	  <li><b>Feb, 2020:</b> Started as a Researcher at Microsoft Research Cambridge</li>
 	  <li><b>Oct, 2019:</b> Defended my <a href="https://ora.ox.ac.uk/objects/uuid:c004de16-0b4a-4d84-899a-040c8d07775e" target="_blank">D.Phil thesis</a> and passed! My examiners were <a href="https://www.robots.ox.ac.uk/~az/" target="_blank">Prof. Andrew Zisserman</a> and <a href="http://www.cs.utexas.edu/users/grauman/" target="_blank">Prof. Kristen Grauman</a></li>
-	  <li><b>Sept, 2019:</b> We wrapped up the 3rd <a href="https://deeplearningindaba.com/2019/" target="_blank">Deep Learning Indaba</a> in Nairobi Kenya. I coordinated the <a href="https://deeplearningindaba.com/blog/2019/07/outcomes-of-2019-kambule-and-maathai-awards/" target="_blank"><i>Kambule and Maathai Awards</i></a> (with <a href="https://adjidieng.github.io/" target="_blank">Adji Bousso Dieng</a>), a <i>How to apply for a PhD</i> workshop (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>, <a href="https://cs.brown.edu/~gdk/" target="_blank">George Konidaris</a>), and a computer vision parallel track (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>)</li>
+	  <li><b>Sept, 2019:</b> We wrapped up the 3rd <a href="https://deeplearningindaba.com" target="_blank">Deep Learning Indaba</a> in Nairobi Kenya. I coordinated the <a href="https://deeplearningindaba.com/blog/2019/07/outcomes-of-2019-kambule-and-maathai-awards/" target="_blank">Kambule and Maathai Awards</a> (with <a href="https://adjidieng.github.io/" target="_blank">Adji Bousso Dieng</a>), a <i>How to apply for a PhD</i> workshop (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>, <a href="https://cs.brown.edu/~gdk/" target="_blank">George Konidaris</a>), and a computer vision parallel track (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>)</li>
 	  <li><b>Aug, 2019:</b> Finished a 3-month machine learning internship at Microsoft Research Cambridge. I worked with <a href="https://www.microsoft.com/en-us/research/people/cecilym/" target="_blank">Cecily Morrison</a>, <a href="https://www.tschiatschek.net/" target="_blank">Sebastian Tschiatschek</a> and <a href="https://khofm.wordpress.com/" target="_blank">Katja Hofmann</a></li>
 	  <li><b>May, 2019:</b> Submitted my D.Phil thesis <i><a href="https://ora.ox.ac.uk/objects/uuid:c004de16-0b4a-4d84-899a-040c8d07775e" target="_blank">Computer vision and natural language processing for people with vision impairment</a></i></li>
   </ul>
@@ -76,7 +80,7 @@
   </div>
   <div id="footerwrapper"> 
 	<div id="email"> daniela_dot_massiceti_at_gmail_dot_com </div>
-  <img src="{{ url_for('static', filename='robotgirl.png') }}" alt=""/>
+  <img src="images/robotgirl.png" alt=""/>
   </div>
   </div>
 </div>
