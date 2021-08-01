@@ -269,8 +269,10 @@ ul.img-list span.text-content span {
   vertical-align: middle;
 }
 
+@media (hover: hover) and (pointer: fine) {
 ul.img-list li:hover span.text-content {
   opacity: 1;
+}
 }
 
 ul.project-list span.text-content span {
@@ -280,8 +282,10 @@ ul.project-list span.text-content span {
   padding: 15px;
 }
 
+@media (hover: hover) and (pointer: fine) {
 ul.project-list li:hover span.text-content {
   opacity: 1;
+}
 }
 
 hr {
