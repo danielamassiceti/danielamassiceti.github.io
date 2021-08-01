@@ -1,19 +1,15 @@
 <!doctype html>
 <html>
-<head>
+<head id="head">
 <meta charset="UTF-8">
+<script src="global_vars.js"></script>
 <title>daniela massiceti // about</title>
 
 <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="/css/twitter-bootstrap.css" />
 <link rel="shortcut icon" href="/static/'tabby.ico" >
 <link rel="icon" href="/static/tabby.ico">
-
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
-
-<meta name="keywords" content="{{ mykeywords }}"/>
-<meta name="description" content="daniela massiceti" />
-<meta name="p:domain_verify" content="15f149f4e12ce0bf04ad541a6e0d8a62"/>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49520497-2"></script>
@@ -25,7 +21,12 @@
         gtag('config', 'UA-49520497-2');
 </script>
 
+<meta name="description" content="daniela massiceti" />
+<meta name="p:domain_verify" content="15f149f4e12ce0bf04ad541a6e0d8a62"/>
 </head>
+<script>
+  document.getElementById("head").innerHTML += '<meta name="keywords" content=' + mykeywords + '/>';
+</script>
 
 <body>
 <div id="wrapper">
@@ -40,7 +41,8 @@
     <a href="/index.html">
       <div class = "h">Daniela Massiceti</div>
     </a>
-    <div class ="subh"> {{ jobtitle }} </div>
+    <div class="subh" id="jobtitle"></div>
+      <script>document.getElementById("jobtitle").innerHTML = jobtitle;</script>
   </div>
   <hr id="tophr"> 
   <nav class="navigationbar">
@@ -48,7 +50,8 @@
           <li><a class="normal" href="/index.html" id=" ">home</a></li>
           <li><a class="normal" href="/about.html" id="currentPage">about</a></li>
           <li><a class="normal" href="/research.html" id=" ">research</a></li>
-          <li><a href="/cvs/{{ cv }}" target=_blank id=" ">cv</a></li>
+          <li><a id="cv" href="" target=_blank id=" ">cv</a></li>
+	    <script>document.getElementById("cv").href = cvpath;</script>
     	</ul>
   </nav>
   <hr id="bottomhr">
