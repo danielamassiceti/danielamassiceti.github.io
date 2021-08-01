@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <script src="global_vars.js"></script>
+<script>
+	document.getElementById("jobtitle").innerHTML = "Bonjour";
+</script>
 <title>daniela massiceti</title>
 
 <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen"/>
@@ -12,7 +15,7 @@
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 
-<meta name="keywords" content="mykeywords"/>
+<meta name="keywords" content="{{ mykeywords }}"/>
 <meta name="description" content="daniela massiceti" />
 <meta name="p:domain_verify" content="15f149f4e12ce0bf04ad541a6e0d8a62"/>
 
@@ -42,7 +45,7 @@
     <a href="index.html">
       <div class = "h">Daniela Massiceti</div>
     </a>
-    <div class ="subh"> {{ jobtitle }} </div>
+    <div class="subh" id="jobtitle"> {{ jobtitle }} </div>
   </div>
   <hr id="tophr">
   <hr id="bottomhr">
