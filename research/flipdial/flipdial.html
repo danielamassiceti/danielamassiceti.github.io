@@ -1,19 +1,15 @@
 <!doctype html>
 <html>
-<head>
+<head id="head">
 <meta charset="UTF-8">
+<script src="/static/global_vars.js"></script>
 <title>daniela massiceti // flipdial</title>
 
-<link rel=stylesheet" type="text/css" href="/static/main.css" media="screen"/>
-<link rel="stylesheet" type="text/css" href="/static/twitter-bootstrap.css" />
-<link rel="shortcut icon" href="/static/tabby.ico" >
-<link rel="icon" href="/static/tabby.ico">
-
+<link rel=stylesheet" type="text/css" href="/static/css/main.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="/static/css/twitter-bootstrap.css" />
+<link rel="shortcut icon" href="/static/images/tabby.ico" >
+<link rel="icon" href="/static/images/tabby.ico">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
-
-<meta name="keywords" content="{{ mykeywords }}">
-<meta name="description" content="daniela massiceti" />
-<meta name="p:domain_verify" content="15f149f4e12ce0bf04ad541a6e0d8a62"/>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49520497-2"></script>
@@ -25,11 +21,16 @@
         gtag('config', 'UA-49520497-2');
 </script>
 
+<meta name="description" content="daniela massiceti" />
+<meta name="p:domain_verify" content="15f149f4e12ce0bf04ad541a6e0d8a62"/>
 </head>
+<script>
+  document.getElementById("head").innerHTML += '<meta name="keywords" content=' + mykeywords + '/>';
+</script>
 
 <body>
 <div id="wrapper">
-	<header id="top">
+  <header id="top">
     <a href="https://scholar.google.com/citations?user=-4fo-SwAAAAJ&hl=en" target=_blank><img id="googlescholar" src="/static/socialmediaicons/gscholar.svg" width="30" height="30" title="google scholar" alt="google scholar"/></a>
     <a href="http://za.linkedin.com/pub/daniela-massiceti/66/422/425" target=_blank><img id="linkedin" src="/static/socialmediaicons/linkedin.png" width="30" height="30" title="linkedin" alt="linkedin"/></a>
     <a href="mailto:daniela.massiceti@gmail.com" target="_top"><img id="mail" src="/static/socialmediaicons/mail_newcolour.png" width="30" height="30" title="mail: daniela.massiceti@gmail.com" alt="mail"/></a>
@@ -40,7 +41,8 @@
     <a href="/index.html">
       <div class = "h">Daniela Massiceti</div>
     </a>
-    <div class ="subh"> {{ jobtitle }} </div>
+    <div class="subh" id="jobtitle"></div>
+      <script>document.getElementById("jobtitle").innerHTML = jobtitle;</script>
   </div>
  	<hr id="tophr"> 
 	    <nav class="navigationbar">
@@ -48,7 +50,8 @@
           	<li><a class="normal" href="/index.html" id=" ">home</a></li>
           	<li><a class="normal" href="/about.html" id=" ">about</a></li>
           	<li><a class="normal" href="/research.html" id=" ">research</a> <a class="normal" href="/research/flipdial/flipdial.html" id="currentPage">&middot flip-dial</a></li>
-          	<li><a href="/cvs/{{ cv }}" target=_blank id=" ">cv</a></li>
+          	<li><a id="cv" href="" target=_blank id=" ">cv</a></li>
+	    	  <script>document.getElementById("cv").href = cvpath;</script>
     		</ul>
       </nav>
   <hr id="demo">
@@ -84,7 +87,7 @@
     </ul>
 	
     <hr id="tophr2">
-    <nav class="navigationbar_x5 navigationbar">
+    <nav class="navigationbar">
       <ul>
         <li><a class="normal" href="/index.html" id="currentPage">abstract</a></li>
         <li><a class="normal" href="https://arxiv.org/abs/1802.03803" target="_blank">paper</a></li>
@@ -96,7 +99,7 @@
 
   	<div id="footerwrapper">
 		  <div id="email"> daniela_dot_massiceti_at_gmail_dot_com </div>
-      <img src="/static/robotgirl.png" alt=""/>
+      <img src="/static/images/robotgirl.png" alt=""/>
 	  </div>
   </div>
 </div>
