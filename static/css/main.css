@@ -195,6 +195,10 @@ h1 {
     margin-top: 40px;
 }
 
+.publications h2 {
+    margin-top: 10px;
+}
+
 /* Common class for section titles */
 .section-title {
     font-size: 1.5em; /* Set the desired font size */
