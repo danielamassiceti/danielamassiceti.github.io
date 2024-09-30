@@ -1,122 +1,116 @@
-<!doctype html>
-<html>
-<head id="head">
-<meta charset="UTF-8">
-<script src="/static/global_vars.js"></script>
-<title>daniela massiceti</title>
-
-<link rel="stylesheet" type="text/css" href="/static/css/main.css" media="screen"/>
-<link rel="stylesheet" type="text/css" href="/static/css/twitter-bootstrap.css" />
-<link rel="shortcut icon" href="/static/images/tabby.ico" >
-<link rel="icon" href="/static/images/tabby.ico">
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3MF0CTQF7"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+document.addEventListener("DOMContentLoaded", function() {
+    const seeMoreLink = document.querySelector(".see-more");
+    const moreUpdates = document.querySelector(".more-updates");
 
-  gtag('config', 'G-F3MF0CTQF7');
+    seeMoreLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        if (moreUpdates.style.display === "none") {
+            moreUpdates.style.display = "block";
+            seeMoreLink.textContent = "See less";
+        } else {
+            moreUpdates.style.display = "none";
+            seeMoreLink.textContent = "See more";
+        }
+    });
+});
 </script>
-
-<meta name="description" content="daniela massiceti" />
-<meta name="p:domain_verify" content="15f149f4e12ce0bf04ad541a6e0d8a62"/>
-<meta name="google-site-verification" content="3S6n6SwJN5S_nil9P-NGvGYtVv1kwMubrafCbakGxUw" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Massiceti - Machine Learning Researcher</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<script>
-  document.getElementById("head").innerHTML += '<meta name="keywords" content=' + mykeywords + '/>';
-</script>
-
 <body>
+    <div class="container">
+        <div class="side-panel">
+            <div class="profile-section">
+                <img src="static/images/profile-photo.jpg" alt="Daniela Massiceti" class="profile-photo">
+                <h1>Daniela Massiceti</h1>
+                <p class="title">Senior Researcher at Microsoft Research</p>
+            </div>
+            <div class="news-updates">
+                <h2 class="section-title">Recent News</h2>
+                <ul>
+                    <li><b>Feb, 2023:</b> <a href="https://openreview.net/forum?id=wq0luyH3m4" target="_blank">Paper</a> with <a href="https://scholar.google.com/citations?user=6aRwDecAAAAJ&hl=en" target="_blank">Samyadeep Basu</a> was accepted to ICLR 2023!</li>
+                    <li><b>Jan, 2023:</b> We launched <a href="https://vizwiz.org/workshops/2023-workshop/" target="_blank">4 exciting computer vision challenges</a> to drive blind/low-vision assistive tech as part of the VizWiz CVPR 2023 workshop!</li>
+                    <li><b>Aug, 2022:</b> Some big news: I've moved to Sydney, Australia! I have transferred with Microsoft Research and will continue to collaborate with my team in the UK and new teams beyond.</li>
+                    <li><b>Jul, 2022:</b> We launched the <a href="https://open.spotify.com/show/7AsiLuLq1Ay7QMBOUJNHfu" target="_blank">VizWiz podcast</a> with episodes featuring discussions with computer vision researchers, blind technology advocates, and industry specialists in accessibility. Podcast editing was done by <a href="https://www.instagram.com/prism.media.podcasting/?hl=en" target="_blank">@prism.media.podcasting</a>.</li>
+                    <li><b>Jun, 2022:</b> We hosted the <a href="https://vizwiz.org/workshops/2022-workshop/" target="_blank">2022 VizWiz workshop</a> at CVPR in New Orleans! We announced the winners of our 3 challenges. The winners of the ORBIT Challenge were <a href="https://www.youtube.com/watch?v=yfc7qI83eFY" target="_blank">ORBITRON</a> from the Australian National University and <a href="https://www.youtube.com/watch?v=fbQICaWyf2g" target="_blank">Canada-Goose</a> from Huawei Noah's Ark Lab Canada.</li>
+                    <li><b>May, 2022:</b> I won the Innovating for the Future Award at the <a href="https://news.microsoft.com/ability-summit-2022/" target="_blank">Microsoft Ability Summit 2022</a>!</li>
+                    <li><b>Feb, 2022:</b> We launched the <a href="https://eval.ai/web/challenges/challenge-page/1438/overview" target="_blank">ORBIT Few-Shot Object Recognition Challenge</a> in collaboration with the <a href="https://vizwiz.org/workshops/2022-workshop" target="_blank">VizWiz workshop</a> at <a href="https://cvpr2022.thecvf.com" target="_blank">CVPR 2022</a>! Top 2 teams will receive $2,500 each. Closing deadline is 6 May 2022.</li>
+                    <li><b>Dec, 2021:</b> Participated in a <a href="https://www.microsoft.com/en-us/research/video/panel-2-pursuing-a-resilient-and-sustainable-global-society/" target="_blank">panel discussion on <i>Pursuing a Resilient and Sustainable Global Society</i></a> as part of Microsoft Research's 30th Anniversary Panel Series on Inspirational and Impactful Research.</li>
+                    <li><b>Dec, 2021:</b> Gave a <a href="https://sites.google.com/view/wiml2021/program" target="_blank">sponsor talk on the ORBIT Dataset</a> at the <a href="https://sites.google.com/view/wiml2021/home" target="_blank">Women in Machine Learning (WiML) workshop</a> at NeurIPS 2021.</li>
+                    <li><b>Oct, 2021:</b> Our team won <a href="https://www.linkedin.com/posts/daniela-massiceti-42542266_microsoft-global-hackathon-2021-award-winner-activity-6980785974683332608-bFhv" target="_blank">1st prize in Microsoft's internal global hackathon</a> out of over 6000 teams!</li>
+                    <div class="more-updates" style="display: none;">
 
-<div id="wrapper">
-  <header id="top">
-    <a href="https://github.com/danielamassiceti" target=_blank><img id="github" src="/static/socialmediaicons/github.png" width="30" height="30" title="github" alt="github"/></a>
-    <a href="https://scholar.google.com/citations?user=-4fo-SwAAAAJ&hl=en" target=_blank><img id="googlescholar" src="/static/socialmediaicons/gscholar.png" width="30" height="30" title="google scholar" alt="google scholar"/></a>
-    <a href="http://za.linkedin.com/pub/daniela-massiceti/66/422/425" target=_blank><img id="linkedin" src="/static/socialmediaicons/linkedin.png" width="30" height="30" title="linkedin" alt="linkedin"/></a>
-    <a href="mailto:daniela.massiceti@gmail.com" target="_top"><img id="mail" src="/static/socialmediaicons/mail_newcolour.png" width="30" height="30" title="mail: daniela.massiceti@gmail.com" alt="mail"/></a>
-    <a href="https://www.twitter.com/DanniMassi/" target=_blank><img id="twitter" src="/static/socialmediaicons/twitter.png" width="30" height="30" title="twitter: @dannimassi" alt="twitter"/></a>
-  </header>
-  
-  <div id="headerimg">
-    <a href="index.html">
-      <div class = "h">Daniela Massiceti</div>
-    </a>
-    <div class="subh" id="jobtitle"></div>
-	<script>document.getElementById("jobtitle").innerHTML = jobtitle;</script>
-  </div>
-  <hr id="tophr">
-  <hr id="bottomhr">
-  
-  <div id="mainbody">
-  <ul class="img-list">
-  
-  <li>
-    <a id="cv" href="" target=_blank>
-	<script>document.getElementById("cv").href = cvpath;</script>
-    <img src="/static/homepageimages/cv.png" width="300" height="300" alt=""/>
-    <span class="text-content"><span>cv</span></span>
-    </a>
-  </li>
-  
-  <li>
-    <a href="about.html">
-      <img src="/static/homepageimages/about.jpg" width="300" height="300" alt=""/>
-      <span class="text-content"><span>about</span></span>
-    </a>
-  </li>
-   
-  <li>
-    <a href="research.html">
-      <img src="/static/homepageimages/research.png" width="300" height="300" alt=""/>
-      <span class="text-content"><span>research</span></span>
-    </a>
-  </li>
-  </ul>
-
-  <div id="recentnews">
-  <h1>Recent news</h1>
-  I am currently <b>looking for strong machine learning interns</b> with expertise in few-shot learning/meta-learning, model explainability/interpretability, and robustness. Please reach out to me if you are interested in collaborating.
-  <ul id="newslist">
-    <li><b>Feb, 2023:</b> Work with my intern <a href="https://scholar.google.com/citations?user=6aRwDecAAAAJ&hl=en" target="_blank">Samyadeep Basu</a> was accepted to ICRL 2023! <a href="https://openreview.net/forum?id=wq0luyH3m4" target="_blank">Our paper</a> proposes a new algorithm to extract difficult few-shot classification tasks, with an accompanying new test benchmark.</li>
-    <li><b>Jan, 2023:</b> We launched <a href="https://vizwiz.org/workshops/2023-workshop/" target="_blank">4 exciting computer vision challenges</a> to drive blind/low-vision assistive tech as part of the VizWiz CVPR 2023 workshop!</li>
-    <li><b>Aug, 2022:</b> Some big news: I've moved to Sydney, Australia! I have transferred with Microsoft Research and will continue to collaborate with my team in the UK and new teams beyond.</li>
-	  <li><b>Jul, 2022:</b> We launched the <a href="https://open.spotify.com/show/7AsiLuLq1Ay7QMBOUJNHfu" target="_blank">VizWiz podcast</a> with episodes featuring discussions with computer vision researchers, blind technology advocates, and industry specialists in accessibility. Podcast editing was done by <a href="https://www.instagram.com/prism.media.podcasting/?hl=en" target="_blank">@prism.media.podcasting</a>.</li>
-	  <li><b>Jun, 2022:</b> We hosted the <a href="https://vizwiz.org/workshops/2022-workshop/" target="_blank">2022 VizWiz workshop</a> at CVPR in New Orleans! We announced the winners of our 3 challenges. The winners of the ORBIT Challenge were <a href="https://www.youtube.com/watch?v=yfc7qI83eFY" target="_blank">ORBITRON</a> from the Australian National University and <a href="https://www.youtube.com/watch?v=fbQICaWyf2g" target="_blank">Canada-Goose</a> from Huawei Noah's Ark Lab Canada.</li>
-	  <li><b>May, 2022:</b> I won the Innovating for the Future Award at the <a href="https://news.microsoft.com/ability-summit-2022/" target="_blank">Microsoft Ability Summit 2022</a>!</li>
-    <li><b>Feb, 2022:</b> We launched the <a href="https://eval.ai/web/challenges/challenge-page/1438/overview" target="_blank">ORBIT Few-Shot Object Recognition Challenge</a> in collaboration with the <a href="https://vizwiz.org/workshops/2022-workshop" target="_blank">VizWiz workshop</a> at <a href="https://cvpr2022.thecvf.com" target="_blank">CVPR 2022</a>! Top 2 teams will receive $2,500 each. Closing deadline is 6 May 2022.</li>
-	  <li><b>Dec, 2021:</b> Participated in a <a href="https://www.microsoft.com/en-us/research/video/panel-2-pursuing-a-resilient-and-sustainable-global-society/" target="_blank">panel discussion on <i>Pursuing a Resilient and Sustainable Global Society</i></a> as part of Microsoft Research's 30th Anniversary Panel Series on Inspirational and Impactful Research.</li>
-	  <li><b>Dec, 2021:</b> Gave a <a href="https://sites.google.com/view/wiml2021/program" target="_blank">sponsor talk on the ORBIT Dataset</a> at the <a href="https://sites.google.com/view/wiml2021/home" target="_blank">Women in Machine Learning (WiML) workshop</a> at NeurIPS 2021.</li>
-    <li><b>Oct, 2021:</b> Our team won <a href="https://www.linkedin.com/posts/daniela-massiceti-42542266_microsoft-global-hackathon-2021-award-winner-activity-6980785974683332608-bFhv" target="_blank">1st prize in Microsoft's internal global hackathon</a> out of over 6000 teams! 
-    <li><b>Oct, 2021:</b> Gave a <a href="https://www.youtube.com/watch?v=WpvOkIJjg-A" target="_blank">talk at the Microsoft Research Summit</a> on how we can use few-shot learning to personalise AI systems to users.
-	  <li><b>Oct, 2021:</b> We reached the 200th mentorship session milestone in the Indaba Mentorship Programme! If you're interested in mentoring African ML students, sign-up as a mentor <a href="https://deeplearningindaba.com/mentorship/" target="_blank">here</a>.
-	  <li><b>Oct, 2021:</b> Joined the <a href="https://vizwiz.org/workshops/2021-workshop/" target="_blank">VizWiz organising committee</a>, an annual workshop on computer vision technologies for the blind/low-vision community.
-	  <li><b>Sept, 2021:</b> Our <a href="https://arxiv.org/abs/2107.01105" target="_blank">paper which proposes LITE</a> was accepted to <a href="https://nips.cc/Conferences/2021/" target="_blank">NeurIPS 2021</a>! LITE is a general memory-efficient method for training meta-learners on large images, leading them to state-of-the-art results on the VTAB+MD and ORBIT benchmarks.</li>
-	  <li><b>Jul, 2021:</b> Our <a href="https://arxiv.org/abs/2104.03841" target="_blank">paper on the ORBIT dataset and benchmark</a> was accepted to <a href="http://iccv2021.thecvf.com/home" target="_blank">ICCV 2021</a>! See <a href="https://github.com/microsoft/ORBIT-Dataset" target="_blank">code here</a> to download the data and run the baseline models on the benchmark.</li>
-	  <li><b>Jul, 2021:</b> Our <a href="https://openaccess.city.ac.uk/id/eprint/26424" target="_blank">paper on collecting disability-first datasets</a> was accepted to <a href="https://assets21.sigaccess.org" target="_blank">ASSETS 2021</a>.</li>
-	  <li><b>Jun, 2021:</b> Gave a <a href="https://ivc.ischool.utexas.edu/~yz9244/VizWiz_workshop_2021/videos/Speaker_Daniela_Massiceti.mp4" target="_blank">talk on the ORBIT dataset</a> - a new real-world few-shot dataset for teachable object recognition - at the <a href="https://vizwiz.org/workshops/2021-workshop" target="_blank">CVPR 2021 VizWiz workshop</a>.</li>
-	  <li><b>Apr, 2021:</b> Wrapped up 12 months of languishing away in a global pandemic.
-	  <li><b>Mar, 2021:</b> Was upgraded to a Senior Researcher at Microsoft Research Cambridge (and also moved to Cambridge)!</li>
-	  <li><b>Feb, 2021:</b> Gave a <a href="https://drive.google.com/file/d/1YJs1svtKGCh5Vh-NgYlW_oW_nOlT2VhG/view?usp=sharing" target="_blank">guest lecture on dataset bias</a> at the Department of Computer Science and Technology, University of Cambridge.</li>
-	  <li><b>Jan, 2021:</b> Launched the <a href="https://deeplearningindaba.com/mentorship" target="_blank">Deep Learning Indaba Mentorship Programme</a> alongside an excellent team including <a href="https://www.linkedin.com/in/avishkarbhoopchand/?originalSubdomain=uk" target="_blank">Aviskhar Bhoopchand</a>, Siobhan Hall, and <a href="https://www.linkedin.com/in/kale-ab-tessera-013976101/?originalSubdomain=za" target="_blank">Kale-ab Tessera</a>.
-	  <li><b>May, 2020:</b> Launched the <a href="https://orbit.city.ac.uk" target="_blank">ORBIT Project</a>, a data collection effort by blind users, with an amazing team of collaborators</li>
-	  <li><b>Apr, 2020:</b> Appointed as a <a href="https://www.st-edmunds.cam.ac.uk/">St. Edmund's College Cambridge</a> Postdoctoral Research Fellow</li>
-	  <li><b>Feb, 2020:</b> Started as a Researcher at Microsoft Research Cambridge</li>
-	  <li><b>Oct, 2019:</b> Defended my <a href="https://ora.ox.ac.uk/objects/uuid:c004de16-0b4a-4d84-899a-040c8d07775e" target="_blank">D.Phil thesis</a> and passed! My examiners were <a href="https://www.robots.ox.ac.uk/~az/" target="_blank">Prof. Andrew Zisserman</a> and <a href="http://www.cs.utexas.edu/users/grauman/" target="_blank">Prof. Kristen Grauman</a></li>
-	  <li><b>Sept, 2019:</b> We wrapped up the 3rd <a href="https://deeplearningindaba.com" target="_blank">Deep Learning Indaba</a> in Nairobi Kenya. I coordinated the <a href="https://deeplearningindaba.com/blog/2019/07/outcomes-of-2019-kambule-and-maathai-awards/" target="_blank">Kambule and Maathai Awards</a> (with <a href="https://adjidieng.github.io/" target="_blank">Adji Bousso Dieng</a>), a <i>How to apply for a PhD</i> workshop (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>, <a href="https://cs.brown.edu/~gdk/" target="_blank">George Konidaris</a>), and a computer vision parallel track (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>)</li>
-	  <li><b>Aug, 2019:</b> Finished a 3-month machine learning internship at Microsoft Research Cambridge. I worked with <a href="https://www.microsoft.com/en-us/research/people/cecilym/" target="_blank">Cecily Morrison</a>, <a href="https://www.tschiatschek.net/" target="_blank">Sebastian Tschiatschek</a> and <a href="https://khofm.wordpress.com/" target="_blank">Katja Hofmann</a></li>
-	  <li><b>May, 2019:</b> Submitted my D.Phil thesis <i><a href="https://ora.ox.ac.uk/objects/uuid:c004de16-0b4a-4d84-899a-040c8d07775e" target="_blank">Computer vision and natural language processing for people with vision impairment</a></i></li>
-  </ul>
-  </div>
-
-  </div>
-  <div id="footerwrapper"> 
-	<div id="email"> daniela_dot_massiceti_at_gmail_dot_com </div>
-  <img src="/static/images/robotgirl.png" alt=""/>
-  </div>
-  </div>
-</div>
+                        <li><b>Oct, 2021:</b> Gave a <a href="https://www.youtube.com/watch?v=WpvOkIJjg-A" target="_blank">talk at the Microsoft Research Summit</a> on how we can use few-shot learning to personalise AI systems to users.</li>
+                        <li><b>Oct, 2021:</b> We reached the 200th mentorship session milestone in the Indaba Mentorship Programme! If you're interested in mentoring African ML students, sign-up as a mentor <a href="https://deeplearningindaba.com/mentorship/" target="_blank">here</a>.</li>
+                        <li><b>Oct, 2021:</b> Joined the <a href="https://vizwiz.org/workshops/2021-workshop/" target="_blank">VizWiz organising committee</a>, an annual workshop on computer vision technologies for the blind/low-vision community.</li>
+                        <li><b>Sept, 2021:</b> Our <a href="https://arxiv.org/abs/2107.01105" target="_blank">paper which proposes LITE</a> was accepted to <a href="https://nips.cc/Conferences/2021/" target="_blank">NeurIPS 2021</a>! LITE is a general memory-efficient method for training meta-learners on large images, leading them to state-of-the-art results on the VTAB+MD and ORBIT benchmarks.</li>
+                        <li><b>Jul, 2021:</b> Our <a href="https://arxiv.org/abs/2104.03841" target="_blank">paper on the ORBIT dataset and benchmark</a> was accepted to <a href="http://iccv2021.thecvf.com/home" target="_blank">ICCV 2021</a>! See <a href="https://github.com/microsoft/ORBIT-Dataset" target="_blank">code here</a> to download the data and run the baseline models on the benchmark.</li>
+                        <li><b>Jul, 2021:</b> Our <a href="https://openaccess.city.ac.uk/id/eprint/26424" target="_blank">paper on collecting disability-first datasets</a> was accepted to <a href="https://assets21.sigaccess.org" target="_blank">ASSETS 2021</a>.</li>
+                        <li><b>Jun, 2021:</b> Gave a <a href="https://ivc.ischool.utexas.edu/~yz9244/VizWiz_workshop_2021/videos/Speaker_Daniela_Massiceti.mp4" target="_blank">talk on the ORBIT dataset</a> - a new real-world few-shot dataset for teachable object recognition - at the <a href="https://vizwiz.org/workshops/2021-workshop" target="_blank">CVPR 2021 VizWiz workshop</a>.</li>
+                        <li><b>Apr, 2021:</b> Wrapped up 12 months of languishing away in a global pandemic.</li>
+                        <li><b>Mar, 2021:</b> Was upgraded to a Senior Researcher at Microsoft Research Cambridge (and also moved to Cambridge)!</li>
+                        <li><b>Feb, 2021:</b> Gave a <a href="https://drive.google.com/file/d/1YJs1svtKGCh5Vh-NgYlW_oW_nOlT2VhG/view?usp=sharing" target="_blank">guest lecture on dataset bias</a> at the Department of Computer Science and Technology, University of Cambridge.</li>
+                        <li><b>Jan, 2021:</b> Launched the <a href="https://deeplearningindaba.com/mentorship" target="_blank">Deep Learning Indaba Mentorship Programme</a> alongside an excellent team including <a href="https://www.linkedin.com/in/avishkarbhoopchand/?originalSubdomain=uk" target="_blank">Aviskhar Bhoopchand</a>, Siobhan Hall, and <a href="https://www.linkedin.com/in/kale-ab-tessera-013976101/?originalSubdomain=za" target="_blank">Kale-ab Tessera</a>.</li>
+                        <li><b>May, 2020:</b> Launched the <a href="https://orbit.city.ac.uk" target="_blank">ORBIT Project</a>, a data collection effort by blind users, with an amazing team of collaborators</li>
+                        <li><b>Apr, 2020:</b> Appointed as a <a href="https://www.st-edmunds.cam.ac.uk/">St. Edmund's College Cambridge</a> Postdoctoral Research Fellow</li>
+                        <li><b>Feb, 2020:</b> Started as a Researcher at Microsoft Research Cambridge</li>
+                        <li><b>Oct, 2019:</b> Defended my <a href="https://ora.ox.ac.uk/objects/uuid:c004de16-0b4a-4d84-899a-040c8d07775e" target="_blank">D.Phil thesis</a> and passed! My examiners were <a href="https://www.robots.ox.ac.uk/~az/" target="_blank">Prof. Andrew Zisserman</a> and <a href="http://www.cs.utexas.edu/users/grauman/" target="_blank">Prof. Kristen Grauman</a></li>
+                        <li><b>Sept, 2019:</b> We wrapped up the 3rd <a href="https://deeplearningindaba.com" target="_blank">Deep Learning Indaba</a> in Nairobi Kenya. I coordinated the <a href="https://deeplearningindaba.com/blog/2019/07/outcomes-of-2019-kambule-and-maathai-awards/" target="_blank">Kambule and Maathai Awards</a> (with <a href="https://adjidieng.github.io/" target="_blank">Adji Bousso Dieng</a>), a <i>How to apply for a PhD</i> workshop (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>, <a href="https://cs.brown.edu/~gdk/" target="_blank">George Konidaris</a>), and a computer vision parallel track (with <a href="https://laurasevilla.me/" target="_blank">Laura Sevilla-Lara</a>)</li>
+                        <li><b>Aug, 2019:</b> Finished a 3-month machine learning internship at Microsoft Research Cambridge. I worked with <a href="https://www.microsoft.com/en-us/research/people/cecilym/" target="_blank">Cecily Morrison</a>, <a href="https://www.tschiatschek.net/" target="_blank">Sebastian Tschiatschek</a> and <a href="https://khofm.wordpress.com/" target="_blank">Katja Hofmann</a></li>
+                        <li><b>May, 2019:</b> Submitted my D.Phil thesis <i><a href="https://ora.ox.ac.uk/objects/uuid:c004de16-0b4a-4d84-899a-040c8d07775e" target="_blank">Computer vision and natural language processing for people with vision impairment</a></i></li>
+                    </div>
+                </ul>
+                <a href="#" class="see-more">See more updates</a>
+            </div>
+        </div>
+        <main class="main-panel">
+            <div class="social-buttons">
+                <a href="https://scholar.google.com/citations?user=-4fo-SwAAAAJ&hl=en" target="_blank" class="icon-button scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="http://za.linkedin.com/pub/daniela-massiceti/66/422/425" target="_blank" class="icon-button linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/danielamassiceti" target="_blank" class="icon-button github"><i class="fab fa-github"></i></a>
+                <a href="https://www.twitter.com/DanniMassi/" target="_blank" class="icon-button twitter"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:daniela.massiceti@gmail.com" class="icon-button email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <section class="introduction">        
+                <p>Hello! I am a senior machine learning researcher at <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>, based in Sydney, Australia.</p>
+                <p>I work at the intersection of machine learning and human-computer interaction, focusing on ensuring AI systems work for marginalised communities. This includes rethinking data collection, model development and evaluation frameworks, usually through a participatory AI lens.</p>
+                <p>I did my D.Phil in Computer Vision (under Prof. Philip Torr) and M.Sc Neuroscience at the University of Oxford, and my B.Sc in Electrical and Computer Engineering at the University of Cape Town. I am also a long-time organiser of the <a href="https://deeplearningindaba.com" target="_blank">Deep Learning Indaba</a>.</p>
+            </section>
+            <section class="publications">
+                <h2 class="section-title">Selected Publications</h2>
+                <p>*See my <a href="https://scholar.google.com/citations?user=-4fo-SwAAAAJ&hl=en" target="_blank">Google Scholar</a> for a complete list.</p>
+                <div class="publication">
+                    <h3>Memory Efficient Meta-Learning with Large Images</h3>
+                    <p>John Bronskill, <u>Daniela Massiceti</u>, Massimiliano Patacchiola, Katja Hofmann, Sebastian Nowozin, Richard E. Turner</p>
+                    <p><i>Neural Information Processing Systems (NeurIPS) 2021</i></p>
+                    <a href="/research/lite_neurips/lite_neurips.html" target="_blank">Read more</a>
+                </div>
+                <div class="publication">
+                    <h3>ORBIT: A Real-World Few-Shot Dataset for Teachable Object Recognition</h3>
+                    <p><u>Daniela Massiceti</u>, Luisa Zintgraf, John Bronskill, Lida Theodorou, Matthew Tobias Harris, Edward Cutrell, Cecily Morrison, Katja Hofmann, Simone Stumpf</p>
+                    <p><i>IEEE International Conference on Computer Vision (ICCV) 2021</i></p>
+                    <a href="/research/orbit_iccv/orbit_iccv.html" target="_blank">Read more</a>
+                </div>
+                <div class="publication">
+                    <h3>Disability-first Dataset Creation: Lessons from Constructing a Dataset with Blind and Low Vision Data Collectors</h3>
+                    <p>Lida Theodorou, <u>Daniela Massiceti</u>, Luisa Zintgraf, Simone Stumpf, Cecily Morrison, Edward Cutrell, Matthew Tobias Harris, Katja Hofmann</p>
+                    <p><i>International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS) 2021</i></p>
+                    <a href="https://openaccess.city.ac.uk/id/eprint/26424/" target="_blank">Read more</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Daniela Massiceti. All rights reserved.</p>
+    </footer>
 </body>
 </html>
