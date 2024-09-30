@@ -186,14 +186,20 @@ h1 {
 
 .publication {
     margin-bottom: 20px;
+    font-size: 0.9em; /* Smaller font size for publications */
 }
 
 .publication h3 {
-    margin-bottom: 2px; /* Reduced gap to author list */
+    margin-bottom: 0px; /* Remove top margin */
+}
+
+.publication .tldr {
+    margin-bottom: 10px; /* Gap to the next element */
 }
 
 .publication .authors {
-    margin-bottom: 5px; /* Reduced gap to TLDR */
+    margin-top: 0px; /* Remove top margin */
+    font-style: italic; /* Italicize the authors */
 }
 
 h2 {
@@ -262,7 +268,14 @@ footer {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .container {
+        display: flex;
         flex-direction: column; /* Stack elements vertically */
+    }
+
+    .side-panel {
+        order: 1; /* Move side panel to the first position */
+        width: 100%; /* Full width */
+        padding: 20px; /* Reduced padding */
     }
 
     .profile-section {
@@ -289,7 +302,7 @@ footer {
         margin-top: 20px; /* Add margin */
     }
 
-    .side-panel, .main-panel {
+    .main-panel {
         width: 100%; /* Full width */
         padding: 20px; /* Reduced padding */
     }
