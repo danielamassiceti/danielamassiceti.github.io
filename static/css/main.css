@@ -111,7 +111,6 @@ h1 {
     background-color: #ffffff;
     position: relative;
     width: 66.67%; /* 2/3 of the width */
-    font-size: 0.9em; /* Slightly reduced text size */
 }
 
 .social-buttons {
@@ -193,6 +192,7 @@ h1 {
 .introduction {
     text-align: justify; /* Justify text */
     margin-top: 40px;
+    font-size: 0.9em; /* Smaller font size */
 }
 
 .publications h2 {
@@ -212,6 +212,7 @@ h1 {
 
 .publication h3 {
     margin-bottom: 0px; /* Remove top margin */
+    
 }
 
 .publication .tldr {
