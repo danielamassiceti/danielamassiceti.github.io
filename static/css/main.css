@@ -21,7 +21,7 @@ body {
     width: 33.33%; /* 1/3 of the width */
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     position: relative;
-    background-image: url('static/images/background.jpeg'); /* Local file */
+    background-image: url("static/images/background.jpeg"); /* Local file */
     background-size: cover; /* Cover the entire area */
     background-repeat: no-repeat;
     background-position: center;
