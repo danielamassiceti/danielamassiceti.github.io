@@ -272,31 +272,25 @@ footer {
         flex-direction: column; /* Stack elements vertically */
     }
 
-    .side-panel {
-        order: 1; /* Move side panel to the first position */
-        width: 100%; /* Full width */
-        padding: 20px; /* Reduced padding */
-    }
-
     .profile-section {
-        order: 1; /* Move profile section to the first position */
+        order: 2; /* Move profile section to the first position */
     }
 
     .introduction {
-        order: 2; /* Move introduction to the second position */
+        order: 3; /* Move introduction to the first position within main panel */
         margin-top: 20px; /* Adjust margin */
     }
 
-    .publications {
-        order: 3; /* Move publications to the third position */
+    .news-updates {
+        order: 4; /* Move recent news to the second position */
     }
 
-    .news-updates {
-        order: 4; /* Move recent news to the fourth position */
+    .publications {
+        order: 5; /* Move publications to the second position within main panel */
     }
 
     .social-buttons {
-        order: 5; /* Move social buttons to the fifth position */
+        order: 1; /* Move social buttons to the third position within main panel */
         position: static; /* Remove absolute positioning */
         justify-content: center; /* Center align */
         margin-top: 20px; /* Add margin */
@@ -305,5 +299,11 @@ footer {
     .main-panel {
         width: 100%; /* Full width */
         padding: 20px; /* Reduced padding */
+    }
+
+    .side-panel {
+        width: 100%; /* Full width */
+        display: flex;
+        flex-direction: column;
     }
 }
