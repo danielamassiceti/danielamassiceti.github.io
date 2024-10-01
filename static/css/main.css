@@ -24,9 +24,9 @@ body {
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     position: relative;
     background-image: url("/static/images/background.jpeg"); /* Local file */
-    background-size: cover; /* Cover the entire area */
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: initial;
+    background-repeat: repeat;
+    background-position: top;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -268,7 +268,7 @@ footer {
     background-color: #008080;
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     position: relative;
     width: 100%;
     margin-top: auto; /* Push the footer to the bottom */
@@ -320,7 +320,14 @@ footer {
         order: 3;
         position: static; /* Remove absolute positioning */
         justify-content: center; /* Center align */
-        margin-top: 0px; /* Add margin */
+    }
+
+    .icon-button {
+        border: 2px solid;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5em;
     }
 
     .main-panel {
