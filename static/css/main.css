@@ -80,7 +80,7 @@ h1 {
 .introduction {
     text-align: justify; /* Justify text */
     margin-top: 0px;
-    font-size: 0.9em; /* Smaller font size */
+    font-size: 1em; /* Smaller font size */
     padding-left: 20px;
     padding-right: 20px
 }
@@ -184,7 +184,7 @@ h1 {
 .news-updates ul {
     list-style-type: none;
     padding: 0;
-    font-size: 0.9em; /* Smaller font size */
+    font-size: 1em;
 }
 
 .news-updates li {
@@ -196,24 +196,20 @@ h1 {
     color: #008080;
     text-decoration: none;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .see-more:hover {
     text-decoration: underline;
 }
 
-.publications h2 {
-    margin-top: 10px;
-}
-
 .publications p {
-    font-size: 0.9em; /* Smaller font size */;
+    font-size: 1em; /* Smaller font size */;
 }
 
 .publication {
     margin-bottom: 20px;
-    font-size: 0.9em; /* Smaller font size for publications */
+    font-size: 1em; /* Smaller font size for publications */
     border-bottom: 1px solid #ddd; /* Thin dividing line */
 }
 
@@ -224,11 +220,13 @@ h1 {
 
 .publication .tldr {
     margin-bottom: 10px; /* Gap to the next element */
+    font-size: 0.9em;;
 }
 
 .publication .authors {
     margin-top: 0px; /* Remove top margin */
     font-style: italic; /* Italicize the authors */
+    font-size: 0.9em;
 }
 
 .button-link {
