@@ -7,12 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
     display: flex;
     flex: 1;
     flex-wrap: wrap; /* Allow wrapping */
+    box-sizing: border-box;
 }
 
 .side-panel {
@@ -27,6 +29,7 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .side-panel::before {
@@ -74,30 +77,12 @@ h1 {
     margin-bottom: 0;
 }
 
-.news-updates {
+.introduction {
+    text-align: justify; /* Justify text */
     margin-top: 0px;
-    flex: 1; /* Allow the news-updates section to grow */
-}
-
-.news-updates ul {
-    list-style-type: none;
-    padding: 0;
     font-size: 0.9em; /* Smaller font size */
-}
-
-.news-updates li {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.see-more {
-    color: #008080;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.see-more:hover {
-    text-decoration: underline;
+    padding-left: 20px;
+    padding-right: 20px
 }
 
 .main-panel {
@@ -106,6 +91,7 @@ h1 {
     background-color: #ffffff;
     position: relative;
     width: 66.67%; /* 2/3 of the width */
+    box-sizing: border-box;
 }
 
 .social-buttons {
@@ -113,8 +99,7 @@ h1 {
     top: 20px;
     right: 20px;
     display: flex;
-    gap: 5px;
-    margin-bottom: 20px;
+    gap: 7px;
 }
 
 .icon-button {
@@ -176,18 +161,46 @@ h1 {
     background-color: #fbc02d6a;
 }
 
+/* Common class for section titles */
+.section-title {
+    font-size: 1.5em; /* Set the desired font size */
+    color: #2c3e50; /* Optional: Set the desired color */
+}
+
 .news-updates, .publications {
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 40px;
+    padding-top: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.introduction {
-    text-align: justify; /* Justify text */
-    margin-top: 40px;
+.news-updates {
+    margin-top: 30px;
+    flex: 1; /* Allow the news-updates section to grow */
+}
+
+.news-updates ul {
+    list-style-type: none;
+    padding: 0;
     font-size: 0.9em; /* Smaller font size */
+}
+
+.news-updates li {
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.see-more {
+    color: #008080;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.see-more:hover {
+    text-decoration: underline;
 }
 
 .publications h2 {
@@ -198,15 +211,10 @@ h1 {
     font-size: 0.9em; /* Smaller font size */;
 }
 
-/* Common class for section titles */
-.section-title {
-    font-size: 1.5em; /* Set the desired font size */
-    color: #2c3e50; /* Optional: Set the desired color */
-}
-
 .publication {
     margin-bottom: 20px;
     font-size: 0.9em; /* Smaller font size for publications */
+    border-bottom: 1px solid #ddd; /* Thin dividing line */
 }
 
 .publication h3 {
@@ -221,6 +229,25 @@ h1 {
 .publication .authors {
     margin-top: 0px; /* Remove top margin */
     font-style: italic; /* Italicize the authors */
+}
+
+.button-link {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 0px 15px;
+    font-size: 0.9em;
+    color: #ffffff;
+    background-color: #008080; /* Teal color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-link:hover {
+    background-color: #005f5f; /* Darker teal on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 h2 {
@@ -245,6 +272,7 @@ footer {
     position: relative;
     width: 100%;
     margin-top: auto; /* Push the footer to the bottom */
+    box-sizing: border-box;
 }
 
 /* Custom Scrollbar Styles */
@@ -265,25 +293,6 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #90a4a4; /* Slightly darker teal on hover */
-}
-
-.button-link {
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 5px 0;
-    font-size: 0.9em;
-    color: #ffffff;
-    background-color: #008080; /* Teal color */
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.button-link:hover {
-    background-color: #005f5f; /* Darker teal on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 @media (max-width: 768px) {
@@ -307,6 +316,13 @@ footer {
         order: 2; /* Move introduction to the second position within side panel */
     }
 
+    .social-buttons {
+        order: 3;
+        position: static; /* Remove absolute positioning */
+        justify-content: center; /* Center align */
+        margin-top: 0px; /* Add margin */
+    }
+
     .main-panel {
         width: 100%; /* Full width */
         padding: 20px; /* Reduced padding */
@@ -315,21 +331,14 @@ footer {
     }
 
     .news-updates {
-        order: 3; /* Move recent news to the first position within main panel */
+        order: 4; 
     }
 
     .publications {
-        order: 4; /* Move publications to the second position within main panel */
-    }
-
-    .social-buttons {
-        order: 5; /* Move social buttons to the third position within main panel */
-        position: static; /* Remove absolute positioning */
-        justify-content: center; /* Center align */
-        margin-top: 20px; /* Add margin */
+        order: 5;
     }
 
     .footer {
-        order: 6; /* Move footer to the third position */
+        order: 6;
     }
 }
